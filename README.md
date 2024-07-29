@@ -4,7 +4,7 @@ This project contains a Python script for analyzing video game sales data. The s
 ## Getting Started
 
 ### Prerequisites
-- Python 3.x
+- Python 3.12
 - Required Python libraries:
   - pandas
   - matplotlib
