@@ -3,6 +3,7 @@
 This project analyzes video game sales data using both SQL and Pandas in Python. It compares average global sales before and after 2005 using two different methods
 
 ## Getting Started
+These instructions will help you set up the project on your local machine for development and testing purposes. For deployment instructions, refer to the Deployment section
 
 ## Project Description
 
@@ -15,19 +16,34 @@ The Python script in this repository performs the following tasks:
 
 ## Prerequisites
 
-- Python 3.x
-- pandas
-- SQLAlchemy
+To run this project, you need the following software installed:
+
+- Python software
+- Pandas library
+- SQLAlchemy library
 - MySQL Connector for Python
+- A MySQL server with a database named `sales_db'
 
 ## Installation
 
-1. Clone this repository: https://github.com/martinsbash/vgsales-analysis.git
-2. Navigate into the project directory: cd vgsales-analysis
-3. Install required Python packages: pip install pandas sqlalchemy mysql-connector-python
-4. Ensure that you have a MySQL database named 'sales_db' created and ready for use.
+Follow these steps to get your development environment up and running:
+
+1. **Download the Project Files**: Download the project files directly from the repository.
+2. **Navigate to the Project Directory**: cd path/to/your/project
+3. **Install Required Python Packages**: pip install pandas sqlalchemy mysql-connector-python
+4. **Prepare the MySQL Database**: Ensure you have a MySQL database named `sales_db` set up and ready for use.
+5. **Update the File Path**: Modify the file path in the script to point to your local CSV file containing the video game sales data.
+6. **Run the Analysis Script**: python vgsales_analysis.py 
+This will execute the script and output the average global sales before and after 2005.
 
 ## Running the Tests
+To verify the functionality of the script, you can run the following automated tests:
+
+### End-to-End Tests
+
+These tests ensure that the data is correctly inserted into the MySQL database and that the average global sales calculations are accurate.
+
+- **Example**: Run the script to see the output of average global sales: python vgsales_analysis.py
 
 ### Breakdown of Tests
 
@@ -39,7 +55,17 @@ The Python script in this repository performs the following tasks:
 
 ## Deployment
 
-To deploy this project, ensure that your MySQL server is running and that the database 'sales_db' is created. Update the database connection string in the script with your MySQL credentials and run the script using: python vgsales_analysis.py
+For deploying this project on a live system, ensure that:
+
+- Your MySQL server is operational.
+- The `sales_db` database is created.
+- Update the database connection string in the script with your MySQL credentials.
+
+## Built With
+
+- **Pandas** - For data manipulation and analysis.
+- **SQLAlchemy** - For database interaction using Python.
+- **MySQL Connector** - To connect Python with MySQL.
 
 ## Author
 
@@ -47,8 +73,8 @@ To deploy this project, ensure that your MySQL server is running and that the da
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://license.md/licenses/mit-license/)) file for details.
 
 ## Acknowledgment
 
-- Data source: [dc.connect]
+- Data source: https://www.kaggle.com/datasets/gregorut/videogamesales
