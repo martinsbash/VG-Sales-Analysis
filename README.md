@@ -1,16 +1,26 @@
 # Video Game Sales Analysis
-This project contains a Python script for analyzing video game sales data. The script performs data cleaning, visualization, and statistical analysis to identify trends and patterns in video game sales.
 
-## Getting Started
+This project analyzes video game sales data using both SQL and Pandas in Python.
 
-### Prerequisites
-- Python 3.12
-- Required Python libraries:
-  - pandas
-  - matplotlib
-  - seaborn
+**##Getting started**
 
-### Installing
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/martinsbash/your-repository.git
+## Project Description
+
+The Python script in this repository performs the following tasks:
+- Loads video game sales data from a CSV file
+- Inserts the data into a MySQL database
+- Adds a new column to categorize games as pre-2005 or post-2005
+- Calculates average global sales for both periods using SQL and Pandas
+- Compares the results from both methods
+
+## Prerequisites
+
+- Python 3.x
+- pandas
+- SQLAlchemy
+- MySQL Connector for Python
+
+## Installation
+
+1. Clone this repository
+2. Install required Python packages:
