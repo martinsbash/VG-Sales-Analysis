@@ -2,7 +2,7 @@
 
 This project analyzes video game sales data using both SQL and Pandas in Python.
 
-**##Getting started**
+## Getting Started
 
 ## Project Description
 
